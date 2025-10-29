@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div class="score home" >
+                   <p id="home-score">0</p>
+                </div>
+                 <div class="btn__container" >
+                    <button onclick="addOnehome()" class="plus_btn" >+1</button>
+                    <button onclick="addTwohome()" class="plus_btn" >+2</button>
+                    <button onclick="addThreehome()" class="plus_btn" >+3</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div class="score quest" >
+                   <p id="guest-score">0</p>
+                </div>
+                 <div class="btn__container" >
+                    <button onclick="addOneguest()" class="plus_btn" >+1</button>
+                    <button onclick="addTwoguest()" class="plus_btn" >+2</button>
+                    <button onclick="addThreeguest()" class="plus_btn" >+3</button>
+                </div>
+            </div>
+            </div>
+             <div class="reset">
+                <button onclick="resetAll()" class="btn-reset">Reset Score</button>
+            </div>
+        </div>    
+    </main>
+       <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "CursedTimerUlil-Aznm";
+  src: url("CursedTimerUlil-Aznm.ttf") format("truetype");
+}
+
+main {
+  display: flex;
+  flex-direction: column; /* Розташовує елементи вертикально */
+  align-items: center; /* Центрує дочірні елементи (container та reset) по горизонталі */
+
+  /* Для прикладу, щоб main займав достатньо місця */
+  width: 100%;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  font-family: "CursedTimerUlil-Aznm", sans-serif;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 90%;
+  text-align: center;
+  color: #eee;
+  margin: 0;
+}
+
+p {
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 141%;
+  text-align: center;
+  color: #f94f6d;
+  margin: 20px;
+  border-radius: 5px;
+  width: 155px;
+  height: 120px;
+  background: #080001;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 575px;
+  height: 385px;
+  background: #1b244a;
+}
+
+button {
+  font-family: "CursedTimerUlil-Aznm", sans-serif;
+}
+
+button:hover {
+  background: #ff6b85;
+  box-shadow: 0 6px 15px rgba(249, 79, 109, 0.5);
+}
+
+.btn__container {
+  margin: 0 auto;
+  width: 155px;
+  height: 45px;
+}
+
+.reset {
+  /* 1. Встановлюємо Flexbox */
+  display: flex;
+
+  /* 2. Центруємо вміст (кнопку) по горизонталі */
+  justify-content: center;
+
+  /* Додайте відступ зверху, щоб відокремити від ігрових рахунків */
+  margin-top: -70px;
+
+  /* Якщо потрібно, обмежте ширину, як у .container */
+
+  /* Центруємо сам блок .reset відносно сторінки (якщо main не займає всю ширину) */
+  margin-left: auto;
+  margin-right: auto;
+}
